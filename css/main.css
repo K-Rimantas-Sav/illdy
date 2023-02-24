@@ -89,7 +89,39 @@ p {
   margin-right: auto;
 }
 
+.btn {
+  border: none;
+  background-color: coral;
+  font-size: 1rem;
+  padding: 0.5em 1em;
+  color: #fff;
+}
+.btn:hover {
+  background-color: #ffb79d;
+}
+
 /* main scss */
 body {
   font-family: "Poppins", sans-serif;
+}
+
+.late-news {
+  background-color: #333;
+  color: #fff;
+  padding-top: 2%;
+  padding-bottom: 5%;
+}
+.late-news .container > .btn {
+  margin-bottom: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.late-news .news__title {
+  text-align: center;
+  font-size: 2rem;
+}
+.late-news .news__subtitle {
+  font-weight: 300;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
