@@ -1,12 +1,24 @@
 
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
 .btn {
   border: none;
-  background-color: coral;
+  background-color: var(--mai-color-yelou);
   font-size: 1rem;
   padding: 0.5em 1em;
   color: #fff;
 
   &:hover {
-    background-color: lighten(coral, 15%);
+    background-color: darken(#f1d204, 25%);
+  }
+  &.btn--arrow::before {
+    content: '\f138';
+    font-family: 'FontAwesome';
+    padding-right: 10px;
   }
 }

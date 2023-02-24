@@ -1,5 +1,10 @@
 @use 'reset';
+@use 'vars';
 @use 'common';
+@use 'mediQ';
+
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
 
 
 /* main scss */
@@ -8,6 +13,7 @@ body {
 
 }
 // Lates news sekcija
+
 
 .late-news {
   background-color: #333;
@@ -22,6 +28,10 @@ body {
     margin-right: auto;
   }
 
+.news-posts{
+  display: grid;
+  gap: 1rem;
+}
 
   .news__title {
     text-align: center;
@@ -30,5 +40,32 @@ body {
   .news__subtitle {
     font-weight: 300;
     text-align: center;
+  }
+
+
+  .single-post {
+    display: flex;
+    flex-direction: column;
+   
+
+    &__description {
+      background-color: #fff;
+      color: #333;
+      padding: 1rem;
+    }
+    &__title {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      &:hover {
+        color: #f1d204;
+      }
+    }
+    &__short {
+      margin-bottom: 2rem;
+
+    }
+    &__link {
+      color: #f1d204;
+    }
   }
 }
