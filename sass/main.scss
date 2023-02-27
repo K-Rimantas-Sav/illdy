@@ -1,5 +1,6 @@
 @use 'reset';
 @use 'vars';
+@use 'header';
 @use 'common';
 @use 'mediQ';
 
@@ -67,5 +68,55 @@ body {
     &__link {
       color: #f1d204;
     }
+  }
+}
+
+// Cqaunter sect
+
+.caunters {
+  padding: 5rem 0;
+  background-color: orchid;
+  background: url(../img/count-bg.jpg ) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  
+  
+}
+.caunterConteiner {
+  display: flex;
+  flex-direction: column;
+}
+.caunter {
+  color: #fff;
+  font-size: 3rem;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+}
+.caunter h2 {
+margin-bottom: 0;
+}
+.caunter h6 {
+  font-size: 1.5rem;
+  
+}
+@media screen and (min-width: 600px) {
+  .caunterConteiner {
+    flex-direction: row;
+    
+  }
+  .caunter {
+    width: 33.33%;
+    line-height: 1;
+  }
+  .caunter h6 {
+margin-bottom: 0;
+  }
+  .card1 {
+    border-right: 1px solid #fff;
+  }
+  .card2 {
+    border-right: 1px solid #fff;
+    
   }
 }
